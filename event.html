@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/event.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- back button-->
+    <header>
+        <a href = "index.html">
+        <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <h1> I211 Event Management Project </h1>
+    </header>
+
+    <!-- main containing project description-->
+    <main>
+
+        <h2> Project Overview </h2>
+        <p> This project is a event management system that allows users
+            to add, edit, and view events thorugh the power of csv files and a database.
+            In this project, I used Python on the backend and Bootstrap on the front-end to create a
+            usable site. </p>
+
+        <h2 id = 'phase'> Phase 1 </h2>
+        <p> The first phase of the project was strictly powered by csv files. I created a csv file for
+            events, venues, and people. I then used flask to get the data into a list of dictionaries, and used
+            Bootstrap and Jinja to
+            format the data on the front end. </p>
+        <h4> Sample Code </h4>
+        <figure>
+            <img id='code-1' src="images/code-1.png" onclick="this.requestFullscreen()">
+        </figure>
+
+        <!-- start of part two-->
+        <div class='phase1-part2'>
+            <p> The second part of Phase 1 was adding and editing the events, venues, and people. I created forms in
+                seperate html files and added
+                routes in the app.py so i can retrieve the data. I created a new temporary dictionary to add the user
+                input, then added that dictionary to the
+                total list of dictionaries for each section, and used my created setter function to rewrite the csv file
+                with the new data. </p>
+            <h4> Sample Code </h4>
+            <!-- sample images-->
+            <div class="images">
+                <figure>
+                    <img src="images/add-event.png" onclick="this.requestFullscreen()">
+                    <figcaption>Add Event</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/edit-event.png" onclick="this.requestFullscreen()">
+                    <figcaption>Editing the Event</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/add-event-html.png" onclick="this.requestFullscreen()">
+                    <figcaption>Html Form for adding the event</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class = "phase2">
+            <h2 id ='phase'> Phase 2 </h2>
+            <p> The second phase of the project is using a database instead of CSV files. </p>
+    </main>
+
+
+
+
+
+
+</body>
+
+</html>

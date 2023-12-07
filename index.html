@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='css/styles.css'>
+    <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class='dropdown'>
+            <ul>
+                <li> About Me </li>
+                <li> Skills </li>
+                <li> Projects </li>
+                <li> Contact </li>
+            </ul>
+        </nav>
+        <div class='social-container'>
+            <i class="fa-solid fa-bars" id='menu'></i>
+            <div class="social-links">
+                <a href="https://github.com/amcc155" target='_blank'>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aidan-mccormick-buczko/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="hero">
+            <div class='hero-container'>
+                <article>
+                    <p> My name is </p>
+                    <h2> Aidan McCormick </h2>
+                    <p> Student at <span class="school">Indiana University </span> studuing informatics
+                        witha cognate in web design and development</p>
+
+                    <div class="buttons">
+                        <div class="button-container button1">
+                            <a href="#projects">
+                                <p> My Work -> </p>
+                            </a>
+                        </div>
+                        <div class="button-container button2">
+                            <p> Resume </p>
+                        </div>
+                    </div>
+                </article>
+
+                <a href="#about-me" class="down-arrow">&#x2193;</a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="about-me" id="about-me">
+
+        <h2 class="sm-view"> About Me </h2>
+        <div class="about-me-container">
+
+            <img src="images/undraw_programming_re_kg9v.svg">
+            <article>
+                <h2 class='lg-view'> About me </h2>
+                <p> Highly motivated student studying Informatics at
+                    Indiana University. Ever since taking the introduction
+                    to Informatics class I have been interested in web design and development
+                    and decided to pick up a cognate in it. Throughout my time at Indiana so far I have
+                    taken a lot of different helpful classes such as Web Design, JavaScript, Application Development in
+                    java,
+                    and many more that helped me build a good and useful skill set. I am excited to take these skills to
+                    a professional level and learn even more.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="skills">
+
+        <div class="skills-container container">
+            <h2> My Skills </h2>
+            <div class="box-container">
+                <div class="box">
+                    <h4> Frontend Development </h4>
+                    <div class="article-container">
+
+                        <article>
+                            <p> CSS </p>
+                        </article>
+                        <article>
+                            <p> HTML </p>
+                        </article>
+                        <article>
+                            <p> JavaScript </p>
+                        </article>
+                        <article>
+                            <p> Bootstrap </p>
+                        </article>
+                        <article>
+                            <p> Figma </p>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <h4> Backend/Other </h4>
+                    <div class="article-container">
+                        <article>
+                            <p> Java </p>
+                        </article>
+                        <article>
+                            <p> Python </p>
+                        </article>
+                        <article>
+                            <p> Flask </p>
+                        </article>
+                        <article>
+                            <p> SQL </p>
+                        </article>
+                        <article>
+                            <p> Git </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="projects" id='projects'>
+        <h2> My Projects </h2>
+        <div class='projects-container'>
+            <div class="projects-box">
+
+                <img src="images/party-time.png">
+                <p> Full Stack Event Management System </p>
+                <a href="event.html" target="_blank">
+                    <button type='button' class='github'> View More </button>
+                </a>
+                <a href="https://cgi.luddy.indiana.edu/~aidmccor/i211_project/index.cgi/" target="_blank">
+                    <button type='button' class='live-preview'> Live Preview </button>
+                </a>
+
+
+            </div>
+            <div class="projects-box">
+
+                <img src="images/Screen Shot 2023-10-16 at 10.14.44 PM.png">
+                <button type='button' class='github'> View Code </button>
+                <button type='button' class='live-preview'> Live Preview </button>
+
+
+            </div>
+            <div class="projects-box">
+                <img src="images/Screen Shot 2023-10-16 at 10.21.43 PM.png">
+                <button type='button' class='github'> View Code </button>
+                <button type='button' class='live-preview'> Live Preview </button>
+
+            </div>
+            <div class="projects-box">
+                <img src="images/Screen Shot 2023-10-16 at 10.27.30 PM.png">
+                <a href="https://github.com/amcc155/Weather-App" target='_blank'>
+                    <button type='button' class='github'> View Code </button>
+                </a>
+                <a href="https://amcc155.github.io/Weather-App/weather/" target='_blank'>
+                    <button type='button' class='live-preview'> Live Preview </button>
+                </a>
+            </div>
+
+            <div class='projects-box'>
+                <video width="320" height='240' controls poster="images/java.png">
+                    <source src='images/cuisine.mp4' type="video/mp4">
+                </video>
+                <button type='button' class='github'> View Code </button>
+                <button type='button' class='live-preview'> Live Preview </button>
+            </div>
+        </div>
+
+        <!-- contact form-->
+        <section id='form'>
+            <h1> Contact Me </h1>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+
+                <input type="text" name="from_name" placeholder="name">
+
+                <input type="email" name="user_email" placeholder="email">
+
+                <textarea name="message" placeholder="message"></textarea>
+                <button type="submit" value="Send"> </button>
+            </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        </section>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+        <script src="js/email.js" type="module"></script>
+
+
+</body>
+
+</html>

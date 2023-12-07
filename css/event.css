@@ -1,0 +1,76 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin-left:2rem;
+    margin-right:2rem;
+    font-size:1.1rem;
+    
+  
+}
+
+
+
+header{
+    margin-top:1rem;
+}
+header h1{
+    text-align: center;
+    padding-top:1rem;
+}
+
+i{
+    font-size:1.5rem;
+    margin-top:0.8rem;
+}
+main{
+    margin-top:1.5rem;
+}
+main p{
+    line-height: 1.6rem;
+    padding-top:0.4rem;
+}
+
+main h1, h2, h4{
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+#phase{
+    text-align: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img{
+    cursor:pointer;
+    width:50%;
+    margin:0 auto;
+ 
+
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  
+}
+
+.phase1-part2{
+    margin-top:2rem;
+}
