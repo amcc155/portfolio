@@ -10,9 +10,10 @@ isDropDownActive = true
 })
 
 if(isDropDownActive){
+    console.log('active')
     document.addEventListener('click',()=>{
         dropdown.style.display = 'none'
         isDropDownActive = false;
-        console.log('u')
+    
     })
 }
