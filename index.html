@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='css/styles.css'>
+    <link rel = "stylesheet" href = "css/normalize.css">  
     <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
+        <div class = 'magicpattern'></div>
         <nav class = 'dropdown'>
             <ul>
             <li> About Me </li>
@@ -33,13 +41,14 @@
 
         </div>
         <div class="hero">
+            
             <div class='hero-container'>
                 <article>
                     <p> My name is </p>
                     <h2> <span id = 'fName' > Aidan </span> McCormick </h2>
-                    <p> Student at <span class="school">Indiana University </span> studuing informatics
-                        witha cognate in web design and development</p>
-
+                    <p> Student at <span class="school">Indiana University </span> studying Informatics
+                        with a cognate in web design and development</p>
+                       
                     <div class="buttons">
                         <div class="button-container button1">
                             <a href= "#projects">
@@ -50,7 +59,9 @@
                             <p> Resume </p>
                         </div>
                     </div>
+                
                 </article>
+           
                 
                 <a href="#about-me" class="down-arrow">&#x2193;</a>
 
@@ -59,11 +70,12 @@
     </header>
     <!--- About ----->
     <section class="about-me" id = "about-me">
-        
+      
         <h2 class = "sm-view"> About Me </h2>
-        <div class="about-me-container">
-           
+        <div class="about-me-content">
+           <div class = 'img'>
             <img src="images/undraw_programming_re_kg9v.svg">
+           </div>
             <article>
                 <h2 class= 'lg-view'> About me </h2>
                 <p> Highly motivated student studying Informatics at 
@@ -74,7 +86,8 @@
                     and many more that helped me build a good and useful skill set. I am excited to take these skills to a professional level and learn even more.
                 </p>
             </article>
-        
+        </div>
+    </div>
         </div>
     </section>
 
@@ -128,7 +141,7 @@
                 </div>
             </div>
         </div>
-
+        </div>
         </section>
                     <!----- Projects ------>
         <section class = "projects" id = 'projects'>
