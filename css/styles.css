@@ -404,12 +404,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
   @media screen and (min-width: 1024px){
     .about-me img{
-      max-width:500px;
+      max-width:400px;
     }
 
     .about-me-container{
       padding-top:0px;
-      max-width: 900px;
+      width:70%;
+      
     }
     
     section{
