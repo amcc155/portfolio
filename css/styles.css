@@ -374,9 +374,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
       height:100vh;
     }
 
-    .hero-container{
-    font-size:1px !important;
-    }
+ 
     
     .skills-container, .projects, .about-me-container{
       height:100vh;
