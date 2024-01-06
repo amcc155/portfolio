@@ -11,14 +11,10 @@ html {
 }
 
 .project{
-  height:calc(100vh - 100px);
-  background-color: green;
   display: flex;
   justify-content: center;
 }
-/* body{
-  background-color: #F69A49;
-} */
+
 
 * {
   margin: 0;
@@ -39,7 +35,9 @@ h1, h2, h3, h4{
   font-family: 'Playfair Display', serif;
 }
 
-
+#menu{
+  cursor: pointer;
+}
 
 section h2{
   color:var(--main-color);
@@ -47,6 +45,7 @@ section h2{
   text-align: center;
   margin-bottom:2.5rem;
  }
+
 /* creating border on bottom of h2s */
  section h2::after{
    content: "";
@@ -66,22 +65,26 @@ ul{
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  gap:0.5rem;
+  font-size: 1.5rem;
+  color:white;
 }
 /* nav */
 
 .logo{
   display: none;
 }
+
 .dropdown {
   position: absolute;
   top: 100%;
   list-style-type: none;
-  
   height: 200px;
   width: 100%;
   font-size: 1.3rem;
   opacity: 0;
   z-index: 0;
+  left:0;
   background-color:#F69A49;
   text-align: center;
   transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
