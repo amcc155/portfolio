@@ -12,8 +12,8 @@
 <body>
     <!-- back button-->
     <header>
-        <a href = "index.html">
-        <i class="fa-solid fa-chevron-left arrow"></i>
+        <a href="index.html">
+            <i class="fa-solid fa-chevron-left arrow"></i>
         </a>
         <h1> I211 Event Management Project </h1>
     </header>
@@ -27,7 +27,7 @@
             In this project, I used Python on the backend and Bootstrap on the front-end to create a
             usable site. </p>
 
-        <h2 id = 'phase'> Phase 1 </h2>
+        <h2 id='phase'> Phase 1 </h2>
         <p> The first phase of the project was strictly powered by csv files. I created a csv file for
             events, venues, and people. I then used flask to get the data into a list of dictionaries, and used
             Bootstrap and Jinja to
@@ -49,24 +49,63 @@
             <!-- sample images-->
             <div class="images">
                 <figure>
-                    <img src="images/add-event.png" onclick="this.requestFullscreen()">
+                    <img src="images/add-event.png" alt = 'code sample' onclick="this.requestFullscreen()">
                     <figcaption>Add Event</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/edit-event.png" onclick="this.requestFullscreen()">
+                    <img src="images/edit-event.png" alt = 'code sample' onclick="this.requestFullscreen()">
                     <figcaption>Editing the Event</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/add-event-html.png" onclick="this.requestFullscreen()">
+                    <img src="images/add-event-html.png" alt = 'code sample' onclick="this.requestFullscreen()">
                     <figcaption>Html Form for adding the event</figcaption>
                 </figure>
             </div>
         </div>
+ 
+        <!-- Phase 2-->
+        <div class="phase phase2">
+            <h2 id='phase'> Phase 2 </h2>
+            <p> The second phase of the project is using a database instead of CSV files. I had to recreate all of the
+                CRUD operations used on phase 1 in SQL.
+                I used MariaDB hosted on IU servers for the database, and PyMySQL to execute the SQL quereies. </p>
 
-        <div class = "phase2">
-            <h2 id ='phase'> Phase 2 </h2>
-            <p> The second phase of the project is using a database instead of CSV files. </p>
-    </main>
+                <div class = "images sql-container">
+                    <figure class = "sql">
+                        <div class = 'sql-images'>
+                        <img src = "images/sql-commands-1.png" alt = 'code sample' onclick = "this.requestFullscreen()">
+                        <img src = "images/sql-commands-2.png" alt = 'code sample' onclick = "this.requestFullscreen()">
+                        </div>
+                        <figcaption> Creating the Database Tables </figcaption>
+                    </figure>
+                </div>
+
+                    <h3> PyMySQL Functions </h3>
+                    <figure id = 'PyMySQL'>
+                        <img src = "images/database.py-1.png" alt = 'code sample' onclick="this.requestFullscreen()">
+                        <figcaption> Sample of some Get and Update functions </figcaption>
+                    </figure>
+                        <figure>
+                        <img src = "images/calling_database_funcs.png" alt = 'code sample' onclick="this.requestFullscreen()">
+                        <figcaption> Calling the database functions in app.py </figcaption>
+                        </figure>
+                        </div>
+
+                    <div class="summary">
+                    <h2 id = 'summary-header'> What I Learned </h2>
+                    <ul> 
+                        <li> Source Control </li>
+                        <li> Git Commands </li>
+                        <li> SQL </li>
+                        <li> backend development </li>
+                        <li> Bootstrap Styling </li>
+                        <li> Jinja Formatting </li>
+                    </ul>
+                </div>
+                 </main>
+
+
+       
 
 
 

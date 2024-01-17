@@ -244,10 +244,12 @@ header {
   margin-bottom:2.5rem;
   padding-top: 3rem;
   background-color: var(--second-color);
- 
+ background-image: url(../images/distressed_texture_in_orange_background.jpg);
+ background-position: center;
+  background-size: cover;
   padding:1rem;
-
-  }
+  
+}
 
 
 .about-me img {
@@ -411,11 +413,20 @@ header {
  
 }
 
-.projects button{
+.projects a{
   margin-bottom:0.5rem;
+  border: 2px solid gray;
+  border-radius:15px;
+  width: 35%;
+  height:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 
-.projects button:hover {
+.projects a:hover {
   background-color: var(--second-color);
   cursor: pointer;
   border-color: white;
@@ -500,10 +511,16 @@ header {
 
   section {
     height: 100vh;
+    max-height: 900px;
   }
 
   section h2{
     font-size:2rem;
+  }
+
+  .about-me h2{
+    text-align: left;
+    margin-bottom:0px;
   }
 
   header {
