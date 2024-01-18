@@ -5,21 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='css/styles.css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav class='dropdown'>
-            <ul>
-                <li> About Me </li>
-                <li> Skills </li>
-                <li> Projects </li>
-                <li> Contact </li>
-            </ul>
-        </nav>
+        <div class='magicpattern'></div>
+
+
         <div class='social-container'>
+            <div class='logo'> AM </div>
+            <nav class='dropdown'>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#form">Contact</a></li>
+                </ul>
+                
+            </nav>
             <i class="fa-solid fa-bars" id='menu'></i>
             <div class="social-links">
                 <a href="https://github.com/amcc155" target='_blank'>
@@ -33,12 +46,13 @@
 
         </div>
         <div class="hero">
+
             <div class='hero-container'>
                 <article>
                     <p> My name is </p>
-                    <h2> Aidan McCormick </h2>
-                    <p> Student at <span class="school">Indiana University </span> studuing informatics
-                        witha cognate in web design and development</p>
+                    <h2> <span id='fName'> Aidan </span> McCormick </h2>
+                    <p> Student at <span class="school">Indiana University </span> studying Informatics
+                        with a cognate in web design and development</p>
 
                     <div class="buttons">
                         <div class="button-container button1">
@@ -46,24 +60,28 @@
                                 <p> My Work -> </p>
                             </a>
                         </div>
-                        <div class="button-container button2">
+                        <a href="aidmccor-resume.pdf" target="_blank" class="button-container button2">
                             <p> Resume </p>
-                        </div>
+                        </a>
                     </div>
+
                 </article>
+
 
                 <a href="#about-me" class="down-arrow">&#x2193;</a>
 
             </div>
         </div>
     </header>
-
+    <!--About -->
     <section class="about-me" id="about-me">
 
-        <h2 class="sm-view"> About Me </h2>
-        <div class="about-me-container">
+        <h2 class="sm-view"> ABOUT ME</h2>
 
-            <img src="images/undraw_programming_re_kg9v.svg">
+        <div class="about-me-content">
+            
+                <img src="images/undraw_programming_re_kg9v.svg" alt='profile-image'>
+           
             <article>
                 <h2 class='lg-view'> About me </h2>
                 <p> Highly motivated student studying Informatics at
@@ -71,134 +89,132 @@
                     to Informatics class I have been interested in web design and development
                     and decided to pick up a cognate in it. Throughout my time at Indiana so far I have
                     taken a lot of different helpful classes such as Web Design, JavaScript, Application Development in
-                    java,
+                    Java,
                     and many more that helped me build a good and useful skill set. I am excited to take these skills to
                     a professional level and learn even more.
                 </p>
             </article>
-
         </div>
     </section>
 
-    <section class="skills">
-
+    <!--- Skills -->
+    <section class="skills" id = 'skills'>
+        <h2> MY SKILLS </h2>
         <div class="skills-container container">
-            <h2> My Skills </h2>
+
             <div class="box-container">
                 <div class="box">
                     <h4> Frontend Development </h4>
                     <div class="article-container">
 
-                        <article>
-                            <p> CSS </p>
-                        </article>
-                        <article>
-                            <p> HTML </p>
-                        </article>
-                        <article>
-                            <p> JavaScript </p>
-                        </article>
-                        <article>
-                            <p> Bootstrap </p>
-                        </article>
-                        <article>
-                            <p> Figma </p>
-                        </article>
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Figma</span>
 
                     </div>
                 </div>
                 <div class="box">
                     <h4> Backend/Other </h4>
                     <div class="article-container">
-                        <article>
-                            <p> Java </p>
-                        </article>
-                        <article>
-                            <p> Python </p>
-                        </article>
-                        <article>
-                            <p> Flask </p>
-                        </article>
-                        <article>
-                            <p> SQL </p>
-                        </article>
-                        <article>
-                            <p> Git </p>
-                        </article>
+                        <span>
+                            Java
+                        </span>
+                        <span>
+                            Python
+                        </span>
+                        <span>
+                            Flask
+                        </span>
+                        <span>
+                            SQL
+                        </span>
+                        <span>
+                            Git
+                        </span>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-
+    <!-- Projects -->
     <section class="projects" id='projects'>
-        <h2> My Projects </h2>
+        <h2> MY PROJECTS </h2>
         <div class='projects-container'>
             <div class="projects-box">
 
-                <img src="images/party-time.png">
+                <img src="images/party-time.png" alt='event-project-picture'>
                 <p> Full Stack Event Management System </p>
+                <p class='stack'> Bootstrap/Flask/Jinja </p>
                 <a href="event.html" target="_blank">
-                    <button type='button' class='github'> View More </button>
-                </a>
-                <a href="https://cgi.luddy.indiana.edu/~aidmccor/i211_project/index.cgi/" target="_blank">
-                    <button type='button' class='live-preview'> Live Preview </button>
-                </a>
+                    View More </a>
+                <a href="https://cgi.luddy.indiana.edu/~aidmccor/i211_project/index.cgi/" target="_blank"
+                    class='live-preview'>Live Preview</a>
 
-
-            </div>
-            <div class="projects-box">
-
-                <img src="images/Screen Shot 2023-10-16 at 10.14.44 PM.png">
-                <button type='button' class='github'> View Code </button>
-                <button type='button' class='live-preview'> Live Preview </button>
 
 
             </div>
             <div class="projects-box">
-                <img src="images/Screen Shot 2023-10-16 at 10.21.43 PM.png">
-                <button type='button' class='github'> View Code </button>
-                <button type='button' class='live-preview'> Live Preview </button>
+
+                <img src='images/furniture-page.png' alt='furniture-page-project'>
+                <p> Furniture Landing Page </p>
+                <p class='stack'> HTML/CSS/JS </p>
+                <a href="https://github.com/amcc155/Furniture-Landing-Page.git" target="_blank"> View Code </a>
+                <a href="https://amcc155.github.io/Furniture-Landing-Page/" target="_blank"> Live Preview </a>
+
 
             </div>
             <div class="projects-box">
-                <img src="images/Screen Shot 2023-10-16 at 10.27.30 PM.png">
-                <a href="https://github.com/amcc155/Weather-App" target='_blank'>
-                    <button type='button' class='github'> View Code </button>
-                </a>
-                <a href="https://amcc155.github.io/Weather-App/weather/" target='_blank'>
-                    <button type='button' class='live-preview'> Live Preview </button>
-                </a>
+                <img src="images/checkout-page.png" alt='checkout-page'>
+                <p> Sneaker Checkout Page </p>
+                <p class='stack'> HTML/CSS/JS </p>
+                <a href='https://github.com/amcc155/Frontend-ecomCheckout.git' target="_blank"> View Code </a>
+                <a href="https://amcc155.github.io/Frontend-ecomCheckout/ecommerce-product-page-main/" target="_blank">
+                    Live Preview </a>
+
+            </div>
+            <div class="projects-box">
+                <img src="images/weather-app.png" alt='weather-app'>
+                <p> Weather App </p>
+                <p class='stack'> HTML/CSS/JS </p>
+                <a href='https://github.com/amcc155/Weather-App.git' target="_blank"> View Code </a>
+                <a href='https://amcc155.github.io/Weather-App/weather/' target='_blank'> Live Preview </a>
             </div>
 
             <div class='projects-box'>
                 <video width="320" height='240' controls poster="images/java.png">
                     <source src='images/cuisine.mp4' type="video/mp4">
                 </video>
-                <button type='button' class='github'> View Code </button>
-                <button type='button' class='live-preview'> Live Preview </button>
+                <p> Cuisine To Go Desktop App </p>
+                <p class='stack'> JavaFx </p>
+                <a href  = "cuisine.html" target = '_blank' > View More </a>
             </div>
         </div>
+    </section>
 
-        <!-- contact form-->
+    <!--Form and Contact -->
+
+    <footer>
         <section id='form'>
-            <h1> Contact Me </h1>
+
             <form id="contact-form">
+                <h1> Contact Me </h1>
                 <input type="hidden" name="contact_number">
 
-                <input type="text" name="from_name" placeholder="name">
+                <input name="from_name" placeholder="Your Name">
 
-                <input type="email" name="user_email" placeholder="email">
+                <input type="email" name="user_email" placeholder="Your Email">
 
-                <textarea name="message" placeholder="message"></textarea>
-                <button type="submit" value="Send"> </button>
+                <input name="message" placeholder="Message">
+                <input type="submit" value="Send">
             </form>
-            <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         </section>
         <script src="js/app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
         <script src="js/email.js" type="module"></script>
-
+    </footer>
 
 </body>
 
