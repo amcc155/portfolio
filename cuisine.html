@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href="css/cuisine.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <i class="fa-solid fa-chevron-left arrow"></i>
+        </a>
+
+
+    </header>
+
+    <main>
+        <h1> Cuisine To Go Application </h1>
+        <h2> Project Overview </h2>
+        <p> Cuisine to Go is a food delievery simulation app that allows a delivery company to optimize their schedule
+            by sending the closest driver to pick up available orders. The program assigns active drivers to fulfill
+            orders by picking up food orders then traveling to their drop-off location, and updates the map to show the
+            current status of the system.
+        </p>
+        <h2> Road Map </h2>
+        <ul>
+            <li> Started with 3 classes and a general design layout for our program. </li>
+            <li> Edited our main GUI several times and made a final decision to use two buttons (one is for creating new
+                orders and the other is for creating new drivers) and use a Grid Pane map below them with a step button
+                following them with a gross income label at the end.
+            </li>
+            <li>Decided to use an arrayList for our orders and drivers and one object for our scheduler.
+            </li>
+            <li>Using pop-up windows to ask the user for new orders and drivers.
+            </li>
+            <li>Began implementing different methods to allow users to input an order that has been received from a
+                customer and to create a new Driver object.
+            </li>
+            <li>Hit several merge conflicts around this point, but we resolved them.
+            </li>
+            <li>Connected classes together using two event handler methods.
+            </li>
+            <li>Connected the Order, main controller, Driver, and Scheduler classes together so that orders get assigned
+                to drivers based on their current location.
+            </li>
+            <li>Implemented the Step button that advances the ‘time’ value of the system by 1 minute by making all
+                drivers moving/picking up orders/delivering orders as needed.
+            </li>
+        </ul>
+
+        <h2 id='sample_header'> Code samples </h2>
+        <div class='code_sample order'>
+            <h3> Order Class </h3>
+            <img src='images/order_class1.png' alt='order class' onclick="this.requestFullscreen()">
+            <img src='images/order_class2.png' alt='second order class' onclick="this.requestFullscreen()">
+        </div>
+        <div class="code_sample driver">
+            <h3> Driver Class </h3>
+            <img src="images/driver_class1.png" alt='driver class' onclick="this.requestFullscreen()">
+            <img src="images/driver_class2.png" alt="driver class 2" onclick="this.requestFullscreen()">
+        </div>
+
+        <div class="summary">
+            <h2 id='summary-header'> What I Learned </h2>
+            <ul>
+                <li> Source Control </li>
+                <li> Java </li>
+                <li> Merge Conflicts </li>
+                <li> Devloping as a Team </li>
+                <li> Documentation </li>
+            </ul>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -21,31 +21,33 @@
     <!-- main containing project description-->
     <main>
 
-        <h2> Project Overview </h2>
+        <h2 id = 'overview'> Project Overview </h2>
         <p> This project is a event management system that allows users
             to add, edit, and view events thorugh the power of csv files and a database.
             In this project, I used Python on the backend and Bootstrap on the front-end to create a
             usable site. </p>
 
+            <div class = 'phase'>
         <h2 id='phase'> Phase 1 </h2>
         <p> The first phase of the project was strictly powered by csv files. I created a csv file for
             events, venues, and people. I then used flask to get the data into a list of dictionaries, and used
             Bootstrap and Jinja to
             format the data on the front end. </p>
-        <h4> Sample Code </h4>
+       
         <figure>
-            <img id='code-1' src="images/code-1.png" onclick="this.requestFullscreen()">
+            <img id='code-1' src="images/code-1.png" alt = 'code preview' onclick="this.requestFullscreen()">
         </figure>
+    </div>
 
         <!-- start of part two-->
-        <div class='phase1-part2'>
+        <div class='phase1-part2 phase'>
             <p> The second part of Phase 1 was adding and editing the events, venues, and people. I created forms in
                 seperate html files and added
                 routes in the app.py so i can retrieve the data. I created a new temporary dictionary to add the user
                 input, then added that dictionary to the
                 total list of dictionaries for each section, and used my created setter function to rewrite the csv file
                 with the new data. </p>
-            <h4> Sample Code </h4>
+          
             <!-- sample images-->
             <div class="images">
                 <figure>
@@ -72,7 +74,7 @@
 
                 <div class = "images sql-container">
                     <figure class = "sql">
-                        <div class = 'sql-images'>
+                        <div class = 'sql-images images'>
                         <img src = "images/sql-commands-1.png" alt = 'code sample' onclick = "this.requestFullscreen()">
                         <img src = "images/sql-commands-2.png" alt = 'code sample' onclick = "this.requestFullscreen()">
                         </div>
@@ -80,7 +82,8 @@
                     </figure>
                 </div>
 
-                    <h3> PyMySQL Functions </h3>
+                
+                    <div class = 'images'>
                     <figure id = 'PyMySQL'>
                         <img src = "images/database.py-1.png" alt = 'code sample' onclick="this.requestFullscreen()">
                         <figcaption> Sample of some Get and Update functions </figcaption>
@@ -89,6 +92,7 @@
                         <img src = "images/calling_database_funcs.png" alt = 'code sample' onclick="this.requestFullscreen()">
                         <figcaption> Calling the database functions in app.py </figcaption>
                         </figure>
+                    </div>
                         </div>
 
                     <div class="summary">

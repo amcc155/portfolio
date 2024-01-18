@@ -128,7 +128,60 @@ img{
    
 }
 
+.summary h2{
+    text-align: center;
+}
+
+
 .summary ul li{
    padding-bottom:1rem;
    font-size: 1.3rem;
+}
+
+@media screen and (min-width:768px) {
+    .images{
+  
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    #overview{
+        display: none;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    header h1{
+        padding-bottom:2rem;
+    }
+
+    main p{
+        padding-left:3rem;
+        padding-right:3rem;
+        width:80%;
+        margin: 0 auto;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+    }
+
+    img{
+        width:600px;
+    }
+
+    .images img{
+        width:400px;
+    }
+
+    .phase{
+        margin-bottom:5rem;
+    }
+
+    figure{
+        margin-top:2rem;
+    }
+    
 }
