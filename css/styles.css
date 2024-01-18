@@ -439,8 +439,7 @@ header {
     margin: 0 auto;
   }
 
-
-  .lg-view {
+.lg-view {
     display: block;
   }
 
@@ -465,7 +464,11 @@ header {
   #menu{
     display: none;
   }
-
+  
+  .about-me img{
+    width:60%;
+    max-width:300px;
+  }
   .dropdown{
     display: none;
   }
@@ -545,7 +548,12 @@ header {
   .skills{
     margin-top:-20rem;
   }
-}
+
+  .about-me img{
+    max-width: 400px;
+  }
+  }
+
 
 
 #form {
