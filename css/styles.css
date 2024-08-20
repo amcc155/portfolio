@@ -83,7 +83,7 @@ ul{
 }
 
 body {
-  background-color: var(--main-color);
+  
   background-color: #EAEAEA;
 }
 
@@ -101,6 +101,7 @@ header {
   height: 70px;
   padding-left: 2rem;
   z-index: 1;
+  top:0;
 
   /* From https://css.glass */
   /* From https://css.glass */
@@ -145,13 +146,18 @@ header {
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top:70px;
+  
 }
 
 .hero-container {
-  margin-top: 220px;
-  height: 400px;
+
+ 
   margin-left: 2rem;
   margin-right: 2rem;
   display: flex;
