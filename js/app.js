@@ -1,39 +1,66 @@
 const menu = document.querySelector('#menu');
 const dropdown = document.querySelector('.dropdown');
+const navLinks = dropdown ? dropdown.querySelectorAll('a') : [];
 
-let isDropDownActive = false;
+function closeDropdown() {
+  if (!dropdown || !menu) {
+    return;
+  }
 
-menu.addEventListener('click', (e) => {
+  dropdown.classList.remove('dropdown-active');
+  menu.setAttribute('aria-expanded', 'false');
+}
+
+function toggleDropdown(e) {
+  if (!dropdown || !menu) {
+    return;
+  }
+
   e.stopPropagation();
-  e.target.classList.add('swirl-in-fwd');
-  dropdown.style.opacity = '1';
-  console.log('ok')
-  isDropDownActive = true;
+  const isActive = dropdown.classList.toggle('dropdown-active');
+  menu.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+}
 
-  // Add event listener to close dropdown when clicking outside
-  document.addEventListener('click', closeDropdown);
+if (menu) {
+  menu.addEventListener('click', toggleDropdown);
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', closeDropdown);
 });
 
-function closeDropdown(e) {
-  if (!dropdown.contains(e.target)) {
-    dropdown.style.opacity = '0';
-    isDropDownActive = false;
-
-    // Remove the event listener after closing the dropdown
-    document.removeEventListener('click', closeDropdown);
+document.addEventListener('click', (e) => {
+  if (!dropdown || !menu) {
+    return;
   }
-}
 
+  if (!dropdown.contains(e.target) && !menu.contains(e.target)) {
+    closeDropdown();
+  }
+});
 
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) {
+    closeDropdown();
+  }
+});
 
-//https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp 
-var prevScrollpos = window.scrollY || window.pageYOffset;
+// https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+let prevScrollpos = window.scrollY || window.pageYOffset;
+
 window.onscroll = function () {
-  var currentScrollPos = window.scrollY || window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.social-container').style.top = "0";
-  } else {
-    document.querySelector('.social-container').style.top = "-50px";
+  const currentScrollPos = window.scrollY || window.pageYOffset;
+  const socialContainer = document.querySelector('.social-container');
+
+  if (!socialContainer) {
+    return;
   }
+
+  if (prevScrollpos > currentScrollPos || currentScrollPos < 40) {
+    socialContainer.style.top = '1rem';
+  } else {
+    socialContainer.style.top = '-110px';
+  }
+
   prevScrollpos = currentScrollPos;
-}
+};

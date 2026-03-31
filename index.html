@@ -4,223 +4,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='css/styles.css'>
+    <meta name="description"
+        content="Portfolio site for Aidan McCormick featuring web development projects, skills, and contact information.">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
         rel="stylesheet">
-
-    <title>Document</title>
+    <title>Aidan McCormick | Portfolio</title>
 </head>
 
 <body>
     <header>
-        <div class='magicpattern'></div>
-
-
-        <div class='social-container'>
-            <div class='logo'> AM </div>
-            <nav class='dropdown'>
+        <div class="social-container">
+            <div class="logo">AM</div>
+            <nav class="dropdown">
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#form">Contact</a></li>
                 </ul>
-
             </nav>
-            <i class="fa-solid fa-bars" id='menu'></i>
+            <button id="menu" class="menu-button" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <div class="social-links">
-                <a href="https://github.com/amcc155" target='_blank'>
+                <a href="https://github.com/amcc155" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/aidan-mcc-bz/" target="_blank">
+                <a href="https://www.linkedin.com/in/aidan-mcc-bz/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
-
-
         </div>
+
         <div class="hero">
-
-            <div class='hero-container'>
+            <div class="hero-container">
                 <article>
-                    <p> My name is </p>
-                    <h2> <span id='fName'> Aidan </span> McCormick </h2>
-                    <p> Student at <span class="school">Indiana University </span> studying Informatics
-                        with minors in web design and development and human-centered-computing</p>
+                    <span class="hero-label">Frontend Developer • Recent Graduate</span>
+                    <p class="intro-copy">My name is</p>
+                    <h1><span id="fName">Aidan</span> McCormick</h1>
+                    <p class="hero-summary">
+                        I build polished, user-focused web experiences with a strong eye for design, usability, and
+                        clean implementation.
+                    </p>
 
-                    <div class="buttons">
-                        <div class="button-container button1">
-                            <a href="#projects">
-                                <p> My Work -> </p>
-                            </a>
-                        </div>
-                        <a href="McCormickBuczResume.pdf" target="_blank" class="button-container button2">
-                            <p> Resume </p>
-                        </a>
+                    <div class="hero-highlights">
+                        <span>Indiana University</span>
+                        <span>Startup Experience</span>
+                        <span>Web Design + Development</span>
                     </div>
 
+                    <div class="buttons">
+                        <a href="#projects" class="button-container button1">My Work <span>&rarr;</span></a>
+                        <a href="McCormickBuczResume.pdf" target="_blank" rel="noopener noreferrer"
+                            class="button-container button2">Resume</a>
+                    </div>
                 </article>
 
+                <aside class="hero-panel">
+                    <p class="panel-label">Current Focus</p>
 
-                <a href="#about-me" class="down-arrow">&#x2193;</a>
+                    <div class="panel-item">
+                        <span>Design-minded development</span>
+                        <p>Creating interfaces that feel clean, intuitive, and thoughtful from the first interaction.
+                        </p>
+                    </div>
 
+                    <div class="panel-item">
+                        <span>Modern web fundamentals</span>
+                        <p>Building with HTML, CSS, JavaScript, React, and strong responsive design habits.</p>
+                    </div>
+
+                    <div class="panel-item">
+                        <span>Collaborative growth</span>
+                        <p>Learning quickly, shipping consistently, and contributing to products that people enjoy
+                            using.</p>
+                    </div>
+                </aside>
+
+                <a href="#about-me" class="down-arrow" aria-label="Scroll to about section">&#x2193;</a>
             </div>
         </div>
     </header>
-    <!--About -->
-    <section class="about-me" id="about-me">
 
-        <h2 class="sm-view"> ABOUT ME</h2>
+    <main>
+        <section class="about-me" id="about-me">
+            <div class="section-heading">
+                <span class="section-label sm-view">About</span>
+                <h2 class="sm-view">Built around thoughtful user experiences</h2>
+            </div>
 
-        <div class="about-me-content">
-
-            <img src="images/undraw_programming_re_kg9v.svg" alt='profile-image'>
-
-            <article>
-                <h2 class='lg-view'> About me </h2>
-                <p> Recent Informatics graduate from Indiana University with an interest for web design and development.
-                    After discovering the field through an introductory Informatics course, I pursued a cognate in Web
-                    Design and Development, completing coursework in JavaScript, Web Design, Application Development
-                    (Java), and more. I’m currently working at a startup, where I’m continuing to build on my technical
-                    foundation while gaining hands-on experience with modern tools and frameworks. Eager to keep
-                    learning and contribute to impactful, user-focused web solutions.
-                </p>
-            </article>
-        </div>
-        <section class="skills" id='skills'>
-            <h2> MY SKILLS </h2>
-            <div class="skills-container container">
-
-                <div class="box-container">
-                    <div class="box">
-                        <h4> Frontend Development </h4>
-                        <div class="article-container">
-
-                            <span>CSS</span>
-                            <span>HTML</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                            <span>Figma</span>
-                            <span> TailwindCSS </span>
-                            <span> TypeScript </span>
-
-                        </div>
+            <div class="about-me-content">
+                <div class="about-visual">
+                    <div class="about-image-frame">
+                        <img src="images/undraw_programming_re_kg9v.svg" alt="Programming illustration">
                     </div>
-                    <div class="box">
-                        <h4> Backend/Other </h4>
-                        <div class="article-container">
-                            <span>
-                                Java
-                            </span>
-                            <span>
-                                Python
-                            </span>
-                            <span>
-                                Flask
-                            </span>
-                            <span>
-                                SQL
-                            </span>
-                            <span>
-                                Git
-                            </span>
+                </div>
+
+                <article>
+                    <span class="section-label lg-view">About</span>
+                    <h2 class="lg-view">Built around thoughtful user experiences</h2>
+                    <p>
+                        Recent Informatics graduate from Indiana University with an interest in web design and
+                        development. After discovering the field through an introductory Informatics course, I pursued a
+                        cognate in Web Design and Development, completing coursework in JavaScript, Web Design,
+                        Application Development (Java), and more. I’m currently working at a startup, where I’m
+                        continuing to build on my technical foundation while gaining hands-on experience with modern
+                        tools and frameworks. Eager to keep learning and contribute to impactful, user-focused web
+                        solutions.
+                    </p>
+
+                    <div class="about-tags">
+                        <span>Frontend Development</span>
+                        <span>Responsive Design</span>
+                        <span>User-Centered Thinking</span>
+                    </div>
+                </article>
+            </div>
+
+            <section class="skills" id="skills">
+                <div class="skills-header">
+                    <span class="section-label">Skill Set</span>
+                    <h2>Tools I like working with</h2>
+                    <p>
+                        A mix of frontend implementation, design sensibility, and backend fundamentals that help me
+                        build complete and user-friendly products.
+                    </p>
+                </div>
+
+                <div class="skills-container container">
+                    <div class="box-container">
+                        <div class="box">
+                            <h4>Frontend Development</h4>
+                            <div class="article-container">
+                                <span>CSS</span>
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>Figma</span>
+                                <span>TailwindCSS</span>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <h4>Backend / Other</h4>
+                            <div class="article-container">
+                                <span>Java</span>
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQL</span>
+                                <span>Git</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-heading">
+                <span class="section-label">Selected Work</span>
+                <h2>Projects that show how I build</h2>
+                <p>
+                    From full-stack apps to team-based class projects, these are a few of the builds that shaped my
+                    approach to product thinking and implementation.
+                </p>
+            </div>
+
+            <div class="projects-container">
+                <article class="projects-box featured-project">
+                    <div class="project-media">
+                        <img src="images/FullStackPicture.png" alt="Image of recipe app project">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-label">Full Stack</span>
+                        <h3>Recipe App</h3>
+                        <p class="project-description">
+                            A full-stack recipe platform built with a modern JavaScript stack and a focus on clean,
+                            usable interactions.
+                        </p>
+                        <p class="stack">Postgresql, Express, React.js, Node.js</p>
+                        <div class="project-links">
+                            <a href="https://github.com/amcc155/FullStackRecipe" target="_blank"
+                                rel="noopener noreferrer">View Code</a>
+                            <a href="https://fullstack-recipe-5e16f7633fd6.herokuapp.com/" target="_blank"
+                                rel="noopener noreferrer" class="live-preview">Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects-box">
+                    <div class="project-media">
+                        <img src="images/Screenshot 2025-09-05 at 12.39.35 PM.png"
+                            alt="Screenshot of Club@IU capstone project">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-label">Capstone</span>
+                        <h3>Club@IU Capstone Project</h3>
+                        <p class="project-description">
+                            A university capstone project centered on improving how students discover and engage with
+                            campus organizations.
+                        </p>
+                        <p class="stack">PHP, JavaScript, HTML/CSS</p>
+                        <div class="project-links">
+                            <a href="https://zion.luddy.indiana.edu/info-capstone-2025/club-at-iu" target="_blank"
+                                rel="noopener noreferrer">View More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects-box">
+                    <div class="project-media">
+                        <img src="images/party-time.png" alt="Image of event management project">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-label">Flask App</span>
+                        <h3>Full Stack Event Management System</h3>
+                        <p class="project-description">
+                            A CRUD-focused event platform that blends Flask, templating, and structured data handling.
+                        </p>
+                        <p class="stack">Bootstrap, Flask, Jinja</p>
+                        <div class="project-links">
+                            <a href="https://github.com/amcc155/EventManageApp" target="_blank"
+                                rel="noopener noreferrer">View Code</a>
+                            <a href="http://amccprojects.com/" target="_blank" rel="noopener noreferrer"
+                                class="live-preview">Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects-box">
+                    <div class="project-media">
+                        <img src="images/ent_web_app.png" alt="Image of entertainment app">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-label">React</span>
+                        <h3>FrontEnd Entertainment App</h3>
+                        <p class="project-description">
+                            A React-based entertainment browsing experience focused on layout, responsiveness, and UI
+                            polish.
+                        </p>
+                        <p class="stack">ReactJS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/amcc155/entertainment-web-app.git" target="_blank"
+                                rel="noopener noreferrer">View Code</a>
+                            <a href="https://entertainment-web-app-aidmccor.netlify.app/" target="_blank"
+                                rel="noopener noreferrer" class="live-preview">Live Preview</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects-box">
+                    <div class="project-media">
+                        <video controls poster="images/java.png">
+                            <source src="images/cuisine.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-label">Desktop App</span>
+                        <h3>Cuisine To Go Desktop App</h3>
+                        <p class="project-description">
+                            A JavaFX delivery simulation focused on scheduling logic, system coordination, and team
+                            collaboration.
+                        </p>
+                        <p class="stack">JavaFX</p>
+                        <div class="project-links">
+                            <a href="cuisine.html">View More</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-    </section>
-
-    <!--- Skills -->
-
-    <!-- Projects -->
-    <section class="projects" id='projects'>
-        <h2> MY PROJECTS </h2>
-
-
-
-        <div class='projects-container'>
-            <div class="projects-box">
-                <img src="images/FullStackPicture.png" alt='image of recipe app project'>
-                <p> Recipe App</p>
-                <p class='stack'> Postgresql, Express, React.js, Node.js</p>
-                <a href='https://github.com/amcc155/FullStackRecipe' target="_blank"> View Code </a>
-                <a href="https://fullstack-recipe-5e16f7633fd6.herokuapp.com/" target="_blank">
-                    Live Preview </a>
-
-            </div>
-
-           
-            <div class="projects-box">
-                <img src="images/Screenshot 2025-09-05 at 12.39.35 PM.png" alt='image of recipe app project'>
-                <p> Club@IU Capstone Project</p>
-                <p class='stack'> PHP, JavaScript, HTML/CSS </p>
-                <a href="https://zion.luddy.indiana.edu/info-capstone-2025/club-at-iu" target="_blank">
-                    View More </a>
-
-            </div>
-
-            
-
-            <div class="projects-box">
-
-                <img src="images/party-time.png" alt=' image of event project'>
-                <p> Full Stack Event Management System </p>
-                <p class='stack'> Bootstrap/Flask/Jinja </p>
-                <a href="https://github.com/amcc155/EventManageApp" target="_blank">
-                    View Code </a>
-                <a href="http://amccprojects.com/" target="_blank" class='live-preview'>Live Preview</a>
-
-
-
-            </div>
-
-
-            <div class="projects-box">
-                <img src="images/ent_web_app.png" alt='image of entertainment-app'>
-                <p> FrontEnd Entertainment App </p>
-                <p class='stack'> ReactJS </p>
-                <a href='https://github.com/amcc155/entertainment-web-app.git' target="_blank"> View Code </a>
-                <a href='https://entertainment-web-app-aidmccor.netlify.app/' target='_blank'> Live Preview </a>
-            </div>
-
-            <div class='projects-box'>
-                <video width="320" height='240' controls poster="images/java.png">
-                    <source src='images/cuisine.mp4' type="video/mp4">
-                </video>
-                <p> Cuisine To Go Desktop App </p>
-                <p class='stack'> JavaFx </p>
-                <a href="cuisine.html" target='_blank'> View More </a>
-            </div>
-        </div>
-    </section>
-
-    <!--Form and Contact -->
+    </main>
 
     <footer>
-        <section id='form'>
+        <section id="form">
+            <div class="contact-shell">
+                <article class="contact-copy">
+                    <span class="section-label">Contact</span>
+                    <h2>Let’s build something thoughtful.</h2>
+                    <p>
+                        I’m always open to talking about new roles, collaborative projects, or ideas that need a clean
+                        and user-focused web experience.
+                    </p>
 
-            <form id="contact-form">
-                <h1> Contact Me </h1>
-                <input type="hidden" name="contact_number">
+                    <div class="contact-links">
+                        <a href="https://github.com/amcc155" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/aidan-mcc-bz/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                        <a href="McCormickBuczResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
+                </article>
 
-                <input name="from_name" placeholder="Your Name">
-
-                <input type="email" name="user_email" placeholder="Your Email">
-
-                <input name="message" placeholder="Message">
-                <input type="submit" value="Send">
-            </form>
+                <form id="contact-form">
+                    <h3>Send a message</h3>
+                    <input type="hidden" name="contact_number">
+                    <input type="text" name="from_name" placeholder="Your Name" autocomplete="name" required>
+                    <input type="email" name="user_email" placeholder="Your Email" autocomplete="email" required>
+                    <textarea name="message" placeholder="Tell me a little about what you have in mind."
+                        required></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
             <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         </section>
         <script src="js/app.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
         <script src="js/email.js" type="module"></script>
     </footer>
 
