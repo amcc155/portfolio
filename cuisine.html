@@ -4,81 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Case study for Aidan McCormick's Cuisine To Go JavaFX delivery simulation application.">
     <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href="css/cuisine.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/cuisine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <title>Cuisine To Go Application | Aidan McCormick</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html" class="back-link">
             <i class="fa-solid fa-chevron-left arrow"></i>
+            <span>Back to Portfolio</span>
         </a>
 
-
+        <div class="hero-copy">
+            <span class="eyebrow">Case Study</span>
+            <h1>Cuisine To Go Application</h1>
+            <p>
+                A JavaFX delivery simulation app focused on dispatch logic, scheduling, and the teamwork required to
+                coordinate drivers and orders in real time.
+            </p>
+        </div>
     </header>
 
     <main>
-        <h1> Cuisine To Go Application </h1>
-        <h2> Project Overview </h2>
-        <p> Cuisine to Go is a food delievery simulation app that allows a delivery company to optimize their schedule
-            by sending the closest driver to pick up available orders. The program assigns active drivers to fulfill
-            orders by picking up food orders then traveling to their drop-off location, and updates the map to show the
-            current status of the system.
-        </p>
-        <h2> Road Map </h2>
-        <ul>
-            <li> Started with 3 classes and a general design layout for our program. </li>
-            <li> Edited our main GUI several times and made a final decision to use two buttons (one is for creating new
-                orders and the other is for creating new drivers) and use a Grid Pane map below them with a step button
-                following them with a gross income label at the end.
-            </li>
-            <li>Decided to use an arrayList for our orders and drivers and one object for our scheduler.
-            </li>
-            <li>Using pop-up windows to ask the user for new orders and drivers.
-            </li>
-            <li>Began implementing different methods to allow users to input an order that has been received from a
-                customer and to create a new Driver object.
-            </li>
-            <li>Hit several merge conflicts around this point, but we resolved them.
-            </li>
-            <li>Connected classes together using two event handler methods.
-            </li>
-            <li>Connected the Order, main controller, Driver, and Scheduler classes together so that orders get assigned
-                to drivers based on their current location.
-            </li>
-            <li>Implemented the Step button that advances the ‘time’ value of the system by 1 minute by making all
-                drivers moving/picking up orders/delivering orders as needed.
-            </li>
-        </ul>
+        <section class="content-section">
+            <h2>Project Overview</h2>
+            <p>
+                Cuisine To Go is a food delivery simulation app that allows a delivery company to optimize its schedule
+                by sending the closest driver to pick up available orders. The program assigns active drivers to
+                fulfill orders by picking up food, traveling to the drop-off location, and updating the map to show
+                the current status of the system.
+            </p>
+        </section>
 
-        <h2 id='sample_header'> Code samples </h2>
-        <div class='code_sample order'>
-            <h3> Order Class </h3>
-            <img src='images/order_class1.png' alt='order class' onclick="this.requestFullscreen()">
-            <img src='images/order_class2.png' alt='second order class' onclick="this.requestFullscreen()">
-        </div>
-        <div class="code_sample driver">
-            <h3> Driver Class </h3>
-            <img src="images/driver_class1.png" alt='driver class' onclick="this.requestFullscreen()">
-            <img src="images/driver_class2.png" alt="driver class 2" onclick="this.requestFullscreen()">
-        </div>
-
-        <div class="summary">
-            <h2 id='summary-header'> What I Learned </h2>
+        <section class="content-section roadmap">
+            <h2>Road Map</h2>
             <ul>
-                <li> Source Control </li>
-                <li> Java </li>
-                <li> Merge Conflicts </li>
-                <li> Devloping as a Team </li>
-                <li> Documentation </li>
+                <li>Started with 3 classes and a general design layout for the program.</li>
+                <li>Refined the main GUI several times before landing on a layout with new order and driver actions, a
+                    map grid, a step button, and a gross income label.</li>
+                <li>Used an ArrayList for orders and drivers and one object for the scheduler.</li>
+                <li>Used pop-up windows to collect user input for new orders and drivers.</li>
+                <li>Implemented methods that support receiving new food orders and creating new Driver objects.</li>
+                <li>Worked through merge conflicts and team coordination as the application grew.</li>
+                <li>Connected classes together with event handler methods.</li>
+                <li>Linked the Order, main controller, Driver, and Scheduler classes so orders are assigned based on
+                    current driver location.</li>
+                <li>Implemented the Step button to advance the system by 1 minute and update all active driver states.
+                </li>
             </ul>
-        </div>
+        </section>
+
+        <section class="content-section samples">
+            <h2 id="sample_header">Code Samples</h2>
+
+            <div class="code-grid">
+                <div class="code_sample order">
+                    <h3>Order Class</h3>
+                    <div class="sample-images">
+                        <img src="images/order_class1.png" alt="Order class code sample" onclick="this.requestFullscreen()"
+                            loading="lazy">
+                        <img src="images/order_class2.png" alt="Second order class code sample"
+                            onclick="this.requestFullscreen()" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="code_sample driver">
+                    <h3>Driver Class</h3>
+                    <div class="sample-images">
+                        <img src="images/driver_class1.png" alt="Driver class code sample"
+                            onclick="this.requestFullscreen()" loading="lazy">
+                        <img src="images/driver_class2.png" alt="Second driver class code sample"
+                            onclick="this.requestFullscreen()" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section summary">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Source Control</li>
+                <li>Java</li>
+                <li>Merge Conflicts</li>
+                <li>Developing as a Team</li>
+                <li>Documentation</li>
+            </ul>
+        </section>
     </main>
-
-
-
-
 </body>
 
 </html>

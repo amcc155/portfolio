@@ -4,118 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Case study for Aidan McCormick's event management project built with Flask, Bootstrap, and SQL.">
     <script src="https://kit.fontawesome.com/301f1fc61c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/event.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <title>I211 Event Management Project | Aidan McCormick</title>
 </head>
 
 <body>
-    <!-- back button-->
     <header>
-        <a href="index.html">
+        <a href="index.html" class="back-link">
             <i class="fa-solid fa-chevron-left arrow"></i>
+            <span>Back to Portfolio</span>
         </a>
-        <h1> I211 Event Management Project </h1>
+
+        <div class="hero-copy">
+            <span class="eyebrow">Case Study</span>
+            <h1>I211 Event Management Project</h1>
+            <p>
+                An event management system that evolved from CSV-backed data handling into SQL-powered CRUD workflows
+                using Flask, Bootstrap, and PyMySQL.
+            </p>
+        </div>
     </header>
 
-    <!-- main containing project description-->
     <main>
+        <section class="content-section">
+            <h2>Project Overview</h2>
+            <p>
+                This project is an event management system that allows users to add, edit, and view events through the
+                power of CSV files and a database. In this project, I used Python on the backend and Bootstrap on the
+                front end to create a usable site.
+            </p>
+        </section>
 
-        <h2 id = 'overview'> Project Overview </h2>
-        <p> This project is a event management system that allows users
-            to add, edit, and view events thorugh the power of csv files and a database.
-            In this project, I used Python on the backend and Bootstrap on the front-end to create a
-            usable site. </p>
+        <section class="content-section phase">
+            <div class="section-intro">
+                <span class="section-kicker">Phase 1</span>
+                <h2>CSV-first workflow</h2>
+            </div>
 
-            <div class = 'phase'>
-        <h2 id='phase'> Phase 1 </h2>
-        <p> The first phase of the project was strictly powered by csv files. I created a csv file for
-            events, venues, and people. I then used flask to get the data into a list of dictionaries, and used
-            Bootstrap and Jinja to
-            format the data on the front end. </p>
-       
-        <figure>
-            <img id='code-1' src="images/code-1.png" alt = 'code preview' onclick="this.requestFullscreen()">
-        </figure>
-    </div>
+            <p>
+                The first phase of the project was strictly powered by CSV files. I created a CSV file for events,
+                venues, and people. I then used Flask to get the data into a list of dictionaries, and used Bootstrap
+                and Jinja to format the data on the front end.
+            </p>
 
-        <!-- start of part two-->
-        <div class='phase1-part2 phase'>
-            <p> The second part of Phase 1 was adding and editing the events, venues, and people. I created forms in
-                seperate html files and added
-                routes in the app.py so i can retrieve the data. I created a new temporary dictionary to add the user
-                input, then added that dictionary to the
-                total list of dictionaries for each section, and used my created setter function to rewrite the csv file
-                with the new data. </p>
-          
-            <!-- sample images-->
+            <figure>
+                <img id="code-1" src="images/code-1.png" alt="Code preview" onclick="this.requestFullscreen()"
+                    loading="lazy">
+                <figcaption>Sample of the early CSV-powered implementation.</figcaption>
+            </figure>
+        </section>
+
+        <section class="content-section phase phase1-part2">
+            <div class="section-intro">
+                <span class="section-kicker">Phase 1</span>
+                <h2>Adding and editing data</h2>
+            </div>
+
+            <p>
+                The second part of Phase 1 focused on adding and editing events, venues, and people. I created forms
+                in separate HTML files and added routes in the app.py so I could retrieve the data. I created a new
+                temporary dictionary to store user input, then added that dictionary to the total list for each section
+                and used my setter function to rewrite the CSV file with the new data.
+            </p>
+
             <div class="images">
                 <figure>
-                    <img src="images/add-event.png" alt = 'code sample' onclick="this.requestFullscreen()">
+                    <img src="images/add-event.png" alt="Code sample for adding an event"
+                        onclick="this.requestFullscreen()" loading="lazy">
                     <figcaption>Add Event</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/edit-event.png" alt = 'code sample' onclick="this.requestFullscreen()">
+                    <img src="images/edit-event.png" alt="Code sample for editing an event"
+                        onclick="this.requestFullscreen()" loading="lazy">
                     <figcaption>Editing the Event</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/add-event-html.png" alt = 'code sample' onclick="this.requestFullscreen()">
-                    <figcaption>Html Form for adding the event</figcaption>
+                    <img src="images/add-event-html.png" alt="HTML form for adding an event"
+                        onclick="this.requestFullscreen()" loading="lazy">
+                    <figcaption>HTML form for adding the event</figcaption>
                 </figure>
             </div>
-        </div>
- 
-        <!-- Phase 2-->
-        <div class="phase phase2">
-            <h2 id='phase'> Phase 2 </h2>
-            <p> The second phase of the project is using a database instead of CSV files. I had to recreate all of the
-                CRUD operations used on phase 1 in SQL.
-                I used MariaDB hosted on IU servers for the database, and PyMySQL to execute the SQL quereies. </p>
+        </section>
 
-                <div class = "images sql-container">
-                    <figure class = "sql">
-                        <div class = 'sql-images images'>
-                        <img src = "images/sql-commands-1.png" alt = 'code sample' onclick = "this.requestFullscreen()">
-                        <img src = "images/sql-commands-2.png" alt = 'code sample' onclick = "this.requestFullscreen()">
-                        </div>
-                        <figcaption> Creating the Database Tables </figcaption>
-                    </figure>
-                </div>
+        <section class="content-section phase phase2">
+            <div class="section-intro">
+                <span class="section-kicker">Phase 2</span>
+                <h2>Database migration</h2>
+            </div>
 
-                
-                    <div class = 'images'>
-                    <figure id = 'PyMySQL'>
-                        <img src = "images/database.py-1.png" alt = 'code sample' onclick="this.requestFullscreen()">
-                        <figcaption> Sample of some Get and Update functions </figcaption>
-                    </figure>
-                        <figure>
-                        <img src = "images/calling_database_funcs.png" alt = 'code sample' onclick="this.requestFullscreen()">
-                        <figcaption> Calling the database functions in app.py </figcaption>
-                        </figure>
+            <p>
+                The second phase of the project used a database instead of CSV files. I had to recreate all of the
+                CRUD operations from Phase 1 in SQL. I used MariaDB hosted on IU servers for the database, and
+                PyMySQL to execute the SQL queries.
+            </p>
+
+            <div class="images sql-container">
+                <figure class="sql">
+                    <div class="sql-images images">
+                        <img src="images/sql-commands-1.png" alt="SQL commands for database setup"
+                            onclick="this.requestFullscreen()" loading="lazy">
+                        <img src="images/sql-commands-2.png" alt="SQL commands for database setup"
+                            onclick="this.requestFullscreen()" loading="lazy">
                     </div>
-                        </div>
+                    <figcaption>Creating the database tables.</figcaption>
+                </figure>
+            </div>
 
-                    <div class="summary">
-                    <h2 id = 'summary-header'> What I Learned </h2>
-                    <ul> 
-                        <li> Source Control </li>
-                        <li> Git Commands </li>
-                        <li> SQL </li>
-                        <li> backend development </li>
-                        <li> Bootstrap Styling </li>
-                        <li> Jinja Formatting </li>
-                    </ul>
-                </div>
-                 </main>
+            <div class="images">
+                <figure id="PyMySQL">
+                    <img src="images/database.py-1.png" alt="Python database functions"
+                        onclick="this.requestFullscreen()" loading="lazy">
+                    <figcaption>Sample get and update functions.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/calling_database_funcs.png" alt="Calling database functions in app.py"
+                        onclick="this.requestFullscreen()" loading="lazy">
+                    <figcaption>Calling the database functions in app.py.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-
-       
-
-
-
-
-
-
+        <section class="content-section summary">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Source Control</li>
+                <li>Git Commands</li>
+                <li>SQL</li>
+                <li>Backend Development</li>
+                <li>Bootstrap Styling</li>
+                <li>Jinja Formatting</li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
